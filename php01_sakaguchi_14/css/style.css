@@ -1,0 +1,179 @@
+.header {
+  margin: 0 auto 50px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  background-color: #ff33cc;
+}
+.title {
+  font-family: "sans-serif";
+  font-weight: bold;
+  color: #464646;
+}
+.main_title {
+  text-decoration: none;
+}
+.question_field {
+  margin: 0 auto;
+}
+.explanation {
+  margin-bottom: 0;
+  margin-left: 25px;
+}
+/* ラジオボタン */
+.rich_radio {
+  width: 90%;
+  margin: 2em auto;
+  text-align: left;
+}
+@keyframes click-wave {
+  0% {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    opacity: 0.35;
+  }
+  100% {
+    width: 200px;
+    height: 200px;
+    margin-top: -80px;
+    margin-left: -80px;
+    opacity: 0;
+  }
+}
+.rich_radio .option {
+  position: relative;
+  position: relative;
+  top: 13.33333px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  transition: all 0.15s ease-out 0s;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  background: #d7cbcb;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.rich_radio .option:hover {
+  background: #8fcfab;
+}
+.rich_radio .option:checked {
+  background: #0066cc;
+}
+.rich_radio .option:checked::before {
+  font-size: 20px;
+  line-height: 30px;
+  position: absolute;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  content: "✔";
+  text-align: center;
+}
+.rich_radio .option:checked::after {
+  position: relative;
+  display: block;
+  content: "";
+  -webkit-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;
+  background: #da3c41;
+}
+.rich_radio .option.radio {
+  border-radius: 50%;
+}
+.rich_radio .option.radio::after {
+  border-radius: 50%;
+}
+.rich_radio label {
+  line-height: 40px;
+  display: block;
+}
+.rich_radio .option:disabled {
+  cursor: not-allowed;
+  background: #b8b7b7;
+}
+.rich_radio .option:disabled::before {
+  font-size: 20px;
+  line-height: 30px;
+  position: absolute;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  content: "✖︎";
+  text-align: center;
+}
+.rich_radio .disabled {
+  color: #9e9e9e;
+}
+/* ラジオボタン */
+
+/* 決定ボタン */
+.submit_button {
+  width: 130px;
+  background-color: #33ccff;
+  border-radius: 5px;
+  box-shadow: 0 3px 0 #009999;
+  color: #ffffff;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px auto;
+  padding: 10px 0;
+}
+.submit_button:hover {
+  opacity: 0.8;
+}
+.submit_button:active {
+  box-shadow: 0 1px 0 #009999;
+  margin: 12px auto 8px;
+}
+/* 決定ボタン */
+
+/* 結果画面 */
+.chra {
+  display: flex;
+  justify-content: center;
+}
+.chra_img_container {
+  widows: 260px;
+  height: 400px;
+}
+.chra_img {
+  widows: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.chra_explanation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 30px;
+}
+.chra_type,
+.chra_text {
+  margin-bottom: 0em;
+}
+.chra_speech {
+  font-style: italic;
+  font-family: serif;
+  font-weight: bolder;
+}
+/* 結果画面 */
+
+/* フッター */
+.footer {
+  margin-top: 45px;
+  padding: 20px 40px 20px;
+  background: #707070;
+  color: #fff;
+  text-align: left;
+}
+/* フッター */
